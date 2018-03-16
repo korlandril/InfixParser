@@ -10,6 +10,7 @@ class Token {
 		vector<string> unary = { "++", "--", "!"};
 		vector<string> binary = {"+", "-", "*", "/", "^", "%", ">", ">=", "<", "<=", "==", "!=", "&&", "||"};
 		char type;
+
 	public:
 		Token(int inopd);
 		Token(string inopr);
