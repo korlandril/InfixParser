@@ -111,10 +111,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Brandonvaluator.h" />
+    <ClInclude Include="Infix_Parser.h" />
+    <ClInclude Include="TarsEvaluator.h" />
     <ClInclude Include="Token.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Infix_Parser.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Brandonvaluator.cpp" />
     <ClCompile Include="Token.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

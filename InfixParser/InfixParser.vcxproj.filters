@@ -18,12 +18,27 @@
     <ClInclude Include="Token.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Infix_Parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TarsEvaluator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Brandonvaluator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Token.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Infix_Parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Brandonvaluator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
