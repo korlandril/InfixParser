@@ -54,7 +54,7 @@ bool Token::isopr()
 	return false;
 }
 
-bool Token::is_binary()
+bool Token::isBinary()
 {
 	vector<string>::iterator it;
 	it = find(binary.begin(), binary.end(), opr);
@@ -65,7 +65,7 @@ bool Token::is_binary()
 
 }
 
-bool Token::is_unary()
+bool Token::isUnary()
 {
 	vector<string>::iterator it;
 	it = find(unary.begin(), unary.end(), opr);

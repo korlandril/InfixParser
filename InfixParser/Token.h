@@ -12,6 +12,7 @@ class Token {
 		char type;
 
 	public:
+		Token() {};
 		Token(int inopd);
 		Token(string inopr);
 
@@ -23,8 +24,8 @@ class Token {
 
 		bool isopd();
 		bool isopr();
-		bool is_binary();
-		bool is_unary();
+		bool isBinary();
+		bool isUnary();
 		
 
 };

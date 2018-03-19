@@ -1,4 +1,5 @@
-#pragma once
+#ifndef EVALUATOR_H
+#define EVALUATOR_H
 #include "Token.h"
 #include <stack>
 #include <string>
@@ -36,3 +37,5 @@ public:
 	Token calculateBinary(Token left, Token opr, Token right);
 	Token calculateUnary(Token opr, Token right);
 };
+
+#endif

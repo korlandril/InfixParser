@@ -21,7 +21,7 @@ class Evaluator {
 	public:
 		//Constructors
 		Evaluator() {};
-		Evaluator(vector<Token> inToken) { tokens = inToken;  };
+		Evaluator(vector<Token> inToken) { tokens = inToken; };
 
 		//Setters
 		void setTokens(vector<Token> tokens); 
