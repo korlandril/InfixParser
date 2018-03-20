@@ -4,39 +4,39 @@
 using namespace std;
 
 
-Token::Token(int inopd)
+Token::Token(int inopd) // Constructor with an initialized operand
 {
 	opd = inopd;
 	opr = "";
 }
 
-Token::Token(string inopr)
+Token::Token(string inopr) // Constructor with an intialized operator
 {
 	opr = inopr;
 	opd = NULL;
 }
 
-int Token::getopd()
+int Token::getopd() // Return operand
 {
 	return opd;
 }
 
-string Token::getopr()
+string Token::getopr() // Return operator
 {
 	return opr;
 }
 
-void Token::setopd(int inopd)
+void Token::setopd(int inopd) // Set Operand
 {
 	opd = inopd;
 }
 
-void Token::setopr(string inopr)
+void Token::setopr(string inopr) // Set Operator
 {
 	opr = inopr;
 }
 
-bool Token::isopd()
+bool Token::isopd() // Return true if the Token is an operand
 {
 	if (opd != NULL)
 	{
@@ -46,7 +46,7 @@ bool Token::isopd()
 	return false;
 }
 
-bool Token::isopr()
+bool Token::isopr() // Return true if the Token is an operator
 {
 	if (opr.length() != 0) {
 		return true;
@@ -54,8 +54,10 @@ bool Token::isopr()
 	return false;
 }
 
-bool Token::isBinary()
+bool Token::isBinary() // Return true if the Token is a binary operator
 {
+
+	//Iterate through the vector of binary operators to determine if the token matches any of them
 	vector<string>::iterator it;
 	it = find(binary.begin(), binary.end(), opr);
 	if (it != binary.end())
@@ -65,8 +67,9 @@ bool Token::isBinary()
 
 }
 
-bool Token::isUnary()
+bool Token::isUnary() // Return true if the Token is a Unary Operator
 {
+	//Iterate through the vector of unary operators to determine if the token matches any of them
 	vector<string>::iterator it;
 	it = find(unary.begin(), unary.end(), opr);
 	if (it != unary.end())
@@ -74,5 +77,3 @@ bool Token::isUnary()
 	else
 		return false;
 }
-
-//This is a test.

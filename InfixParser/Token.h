@@ -1,11 +1,13 @@
+//Yes I know my code isn't documented at all srry srry 
+
 #ifndef TOKEN_H
 #include <string>
 #include <vector>
 using namespace std;
 class Token {
 	private:
-		int opd;
-		string opr; 
+		int opd = NULL;
+		string opr = NULL; 
 
 		vector<string> unary = { "++", "--", "!"};
 		vector<string> binary = {"+", "-", "*", "/", "^", "%", ">", ">=", "<", "<=", "==", "!=", "&&", "||"};
@@ -22,10 +24,10 @@ class Token {
 		void setopd(int inopd);
 		void setopr(string inopr);
 
-		bool isopd();
-		bool isopr();
-		bool isBinary();
-		bool isUnary();
+		bool isopd(); //Checks if Token is an oeprand
+		bool isopr(); //Checks if the token is an operator
+		bool isBinary(); //Checks if the Token is a Binary operator
+		bool isUnary(); //Checks if the Token is a Unary Operator
 		
 
 };
